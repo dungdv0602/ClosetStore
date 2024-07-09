@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    tools:context=".Fragment.Size_Color_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgProductCartDialog"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/ProductNameCartDialog"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Aó thun nam có dãn 4 chiều  nhà"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PriceCartDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:text="Kho: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quantityCartDiaLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="80dp"
+        android:text="5"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Size:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sizeS"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/defaultColor"
+            android:text="S"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/sizeM"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/defaultColor"
+            android:text="M"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/sizeL"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/defaultColor"
+            android:text="L"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/sizeXL"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/defaultColor"
+            android:text="XL"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Số lượng:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/SoluongDown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/soluongtru"
+            app:riv_border_color="#333333"
+            app:riv_border_width="1dip"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            android:id="@+id/SoluongProductCart"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="17dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/SoluongUp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/soluongcong"
+            app:riv_border_color="#333333"
+            app:riv_border_width="1dip"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AddCartDialog"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#008DFD"
+        android:drawableLeft="@drawable/baseline_shopping_cart_24"
+        android:text="Thêm vào giỏ hàng"
+        android:visibility="gone" />
+
+
+</FrameLayout>
